@@ -1,10 +1,10 @@
 {
-	"name": "egghead-downloader",
+	"name": "egghead-lite",
 	"version": "0.0.0",
 	"description": "Simple node.js command line tool that can download series, playlists and lessons from https://egghead.io for you.",
 	"preferGlobal": true,
 	"bin": {
-		"egghead-downloader": "build/main.js"
+		"egghead-lite": "build/main.js"
 	},
 	"scripts": {
 		"test": "echo true",
@@ -17,18 +17,18 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/ali-master/egghead-downloader.git"
+		"url": "git+https://github.com/ali-master/egghead-lite.git"
 	},
 	"keywords": [
 		"egghead",
-		"egghead-download"
+		"egghead-lite"
 	],
 	"author": "Ali Torki",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/ali-master/egghead-downloader/issues"
+		"url": "https://github.com/ali-master/egghead-lite/issues"
 	},
-	"homepage": "https://github.com/ali-master/egghead-downloader#readme",
+	"homepage": "https://github.com/ali-master/egghead-lite#readme",
 	"devDependencies": {
 		"babel-core": "^6.25.0",
 		"babel-eslint": "^7.2.3",
