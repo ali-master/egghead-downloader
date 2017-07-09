@@ -1,0 +1,56 @@
+{
+	"name": "egghead-downloader",
+	"version": "0.0.0",
+	"description": "Simple node.js command line tool that can download series, playlists and lessons from https://egghead.io for you.",
+	"preferGlobal": true,
+	"bin": {
+		"egghead-downloader": "build/main.js"
+	},
+	"scripts": {
+		"test": "echo true",
+		"clean": "rimraf dist && rimraf build",
+		"start": "npm run clean && webpack",
+		"build": "npm run clean && webpack --progress --config webpack.prod.config.js",
+		"lint": "eslint . source/ --color",
+		"lint:debug": "npm run lint -- --debug",
+		"lint:fix": "npm run lint -- --fix"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ali-master/egghead-downloader.git"
+	},
+	"keywords": [
+		"egghead",
+		"egghead-download"
+	],
+	"author": "Ali Torki",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ali-master/egghead-downloader/issues"
+	},
+	"homepage": "https://github.com/ali-master/egghead-downloader#readme",
+	"devDependencies": {
+		"babel-core": "^6.25.0",
+		"babel-eslint": "^7.2.3",
+		"babel-loader": "^7.1.1",
+		"babel-plugin-syntax-async-functions": "^6.13.0",
+		"babel-plugin-transform-regenerator": "^6.24.1",
+		"babel-polyfill": "^6.23.0",
+		"babel-preset-es2015": "^6.24.1",
+		"eslint": "^4.2.0",
+		"eslint-config-standard": "^10.2.1",
+		"eslint-plugin-import": "^2.7.0",
+		"eslint-plugin-node": "^5.1.0",
+		"eslint-plugin-promise": "^3.5.0",
+		"eslint-plugin-standard": "^3.0.1",
+		"friendly-errors-webpack-plugin": "1.6.1",
+		"pre-commit": "^1.2.2",
+		"rimraf": "^2.6.1",
+		"webpack": "^3.1.0"
+	},
+	"pre-commit": [
+		"lint",
+		"lint:debug",
+		"lint:fix"
+	]
+}
