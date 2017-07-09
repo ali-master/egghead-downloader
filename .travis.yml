@@ -15,7 +15,6 @@ matrix:
     fast_finish: true
 
 before_script:
-    - npm i -g npm
     - npm run lint
 
 script:
