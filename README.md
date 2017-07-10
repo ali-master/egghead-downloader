@@ -1,5 +1,7 @@
 # Egghead.io Lite
 
+> Project is Developing
+
 This is a small node.js command line tool that can download series, playlists and lessons from [egghead.io](https://egghead.io/) as .mp4 for you.
 
 # Install
