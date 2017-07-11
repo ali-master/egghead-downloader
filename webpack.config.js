@@ -79,13 +79,9 @@ const config = {
         // enable HMR globally
         new webpack.HotModuleReplacementPlugin(),
         new webpack.IgnorePlugin(/\.(css|less)$/),
-        new webpack.BannerPlugin({banner: 'require("source-map-support").install();', raw: true, entryOnly: false}),
+        new webpack.BannerPlugin({banner: '#!/usr/bin/env node', raw: true}),
     ],
     node: {
-        console: true,
-        global: false,
-        process: false,
-        Buffer: false,
         __filename: true,
         __dirname: true
     },

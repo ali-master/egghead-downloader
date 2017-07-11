@@ -51,7 +51,7 @@ const config = {
             VERSION: JSON.stringify(package.version),
         }),
         new webpack.IgnorePlugin(/\.(css|less)$/),
-        new webpack.BannerPlugin({banner: 'require("source-map-support").install();', raw: true, entryOnly: false}),
+		new webpack.BannerPlugin({banner: '#!/usr/bin/env node', raw: true}),
         new webpack.LoaderOptionsPlugin({
             minimize: true,
             debug: false
@@ -59,10 +59,6 @@ const config = {
         new webpack.NoEmitOnErrorsPlugin(),
     ],
     node: {
-        console: true,
-        global: false,
-        process: false,
-        Buffer: false,
         __filename: true,
         __dirname: true
     },
