@@ -86,7 +86,7 @@ const config = {
         __dirname: true
     },
     performance: {
-        hints: "warning",
+        hints: false,
     },
 }
 
